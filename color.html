@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>color text</title>
+	<link rel="icon"  href="rainbow.gif" >	
+<style type="text/css">
+.w{font-family: Castellar;}	
+
+</style>
+</head>
+<body>
+<h1 class="w" align="center">_color text</h1>
+<h3 align="right">在本页面中你可以选择自己喜欢的颜色进行页面调试</h3>
+ <table width="100%" height="737px"  cellspacing="0" >
+<form action="#" method="post">
+
+<tr>
+	<td ><input type="color" name="color" onchange="document.bgColor=this.value">
+<input type="submit" value="重置"></td>
+</tr></form>
+<tr>
+	<td >
+
+选择你要获取的颜色<input type="color" id="myColor">
+
+<p id="demo"></p>
+<button onclick="myFunction()">获取</button>
+<script>
+function myFunction() {
+    var x = document.getElementById("myColor").value;
+    document.getElementById("demo").innerHTML = x;
+}
+</script></td>
+</tr>
+
+
+</table>
+</html>
